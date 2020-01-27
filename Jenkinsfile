@@ -5,7 +5,7 @@ pipeline {
       steps {
         bat 'gradle build '
         bat 'gradle javadoc'
-        archiveArtifacts 'C:\\Users\\Djallal\\gradle\\build\\docs\\javadoc/*'
+        archiveArtifacts 'build\\docs\\javadoc\\*'
       }
     }
 
