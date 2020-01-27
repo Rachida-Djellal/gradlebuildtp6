@@ -1,0 +1,48 @@
+plugins {
+    id 'java'
+    id 'jacoco'
+
+    id "org.sonarqube" version "2.8"
+
+
+}
+
+group 'com.exemple'
+version '1.0-SNAPSHOT'
+
+
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+
+}
+
+
+
+
+
+dependencies {
+    testImplementation group: 'junit', name: 'junit', version: '4.12'
+
+}
+
+
+publishing {
+    repositories {
+        maven {
+            url 'https://mymavenrepo.com/repo/aYpehHS6Opv0hvq1olkk/'
+            credentials {
+                username 'myMavenRepo'
+                password 'lanalolo'
+            }
+        }
+    }
+
+    publications {
+        maven(MavenPublication) {
+            from components.java
+        }
+    }
+}
