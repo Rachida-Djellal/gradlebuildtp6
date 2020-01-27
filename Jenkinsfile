@@ -10,5 +10,11 @@ pipeline {
       }
     }
 
+    stage('Mail Notification') {
+      steps {
+        mail(to: 'gr_djellal@esi.dz', subject: 'tpoutil', body: 'vwgwbg', bcc: 'bgfwb', cc: 'gbwg', charset: 'wb', from: 'rachida')
+      }
+    }
+
   }
 }
