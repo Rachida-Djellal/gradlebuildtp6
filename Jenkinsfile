@@ -16,5 +16,11 @@ pipeline {
       }
     }
 
+    stage('code analysis') {
+      steps {
+        withSonarQubeEnv 'sonar'
+      }
+    }
+
   }
 }
