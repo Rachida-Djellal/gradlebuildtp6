@@ -12,7 +12,7 @@ pipeline {
 
     stage('Mail Notification') {
       steps {
-        mail(to: 'gr_djellal@esi.dz', subject: 'tpoutil', body: 'vwgwbg', bcc: 'bgfwb', cc: 'gbwg', charset: 'wb', from: 'rachida')
+        mail(to: 'gn_ahmime@esi.dz', subject: 'tpoutil', body: 'vwgwbg', from: 'gr_djellal@esi.dz')
       }
     }
 
