@@ -18,7 +18,10 @@ pipeline {
 
     stage('code analysis') {
       steps {
-        withSonarQubeEnv 'sonar'
+        withSonarQubeEnv('sonar') {
+          bat 'sonar'
+        }
+
       }
     }
 
