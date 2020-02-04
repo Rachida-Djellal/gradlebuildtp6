@@ -38,17 +38,16 @@ pipeline {
     }
 
     stage('Deployment') {
-          when {
-       branch 'master'
-             }
+      when {
+        branch 'master'
+      }
       steps {
         bat 'C:\\Users\\Djallal\\Desktop\\2cs\\outil1\\gradle-6.0.1\\bin\\gradle publish'
       }
     }
 
     stage('slack ') {
-      when 
-      {
+      when {
         branch 'master'
       }
       steps {
