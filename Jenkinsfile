@@ -42,5 +42,11 @@ pipeline {
       }
     }
 
+    stage('slack ') {
+      steps {
+        slackSend(token: 'TRC4DGSAE/BT62RMTU2/xkDQOCImpl3xUisvsWjf0K0T', baseUrl: 'https://hooks.slack.com/services/', teamDomain: 'hooks', channel: '#matrix', message: 'terminer')
+      }
+    }
+
   }
 }
