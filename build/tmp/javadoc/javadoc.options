@@ -1,0 +1,9 @@
+-classpath 'C:\\Users\\Djallal\\gradle\\build\\classes\\java\\main;C:\\Users\\Djallal\\gradle\\build\\resources\\main'
+-d 'C:\\Users\\Djallal\\gradle\\build\\docs\\javadoc'
+-doctitle 'gradle 1.0-SNAPSHOT API'
+-notimestamp 
+-quiet 
+-windowtitle 'gradle 1.0-SNAPSHOT API'
+'C:\\Users\\Djallal\\gradle\\src\\main\\java\\com\\example\\exception\\NoSquareException.java'
+'C:\\Users\\Djallal\\gradle\\src\\main\\java\\com\\example\\model\\Matrix.java'
+'C:\\Users\\Djallal\\gradle\\src\\main\\java\\com\\example\\service\\MatrixMathematics.java'
